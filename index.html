@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WeekWhy - which week number is this date, really?</title>
+<meta name="description" content="29 December 2025 is week 1 of 2026. See ISO, US and strftime week numbers side by side.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#12132a;color:#eceefc;line-height:1.6}
+.wrap{max-width:680px;margin:0 auto;padding:48px 20px 60px}.logo{font-size:46px;font-weight:800}.logo span{color:#818cf8}
+.tag{font-size:19px;margin-top:10px;color:#cfd3f7}.cta{display:inline-block;margin-top:26px;background:#818cf8;color:#12132a;font-weight:700;padding:14px 30px;border-radius:12px;text-decoration:none}
+h2{font-size:21px;margin:40px 0 10px}li{color:#a5a9d6;margin-bottom:8px}ul{margin-left:20px}
+.demo{margin-top:26px;background:#1c1e3f;border-radius:14px;padding:18px}.demo b{color:#c7d2fe}
+footer{margin-top:50px;font-size:13px;color:#8084b8}a{color:#818cf8}
+</style></head><body><div class="wrap">
+<div class="logo">Week<span>Why</span></div>
+<div class="tag">December 29, 2025 is in week 1. Of 2026.</div>
+<a class="cta" href="app.html">Open the app</a>
+<div class="demo">ISO week numbers belong to the year of their Thursday, so <b>29 Dec 2025</b> is <b>2026-W01</b> and <b>1 Jan 2010</b> is <b>2009-W53</b>. A US calendar and strftime %U can say something else for the same day.</div>
+<h2>What it does</h2>
+<ul><li>Shows one date under ISO 8601, US, Saturday-start and strftime %U and %W week rules.</li>
+<li>Warns when the ISO week-year is not the calendar year.</li>
+<li>Converts an ISO year, week and day back to a date, and rejects week 53 in short years.</li>
+<li>Runs in your browser. Nothing is uploaded.</li></ul>
+<h2>How far to trust it</h2>
+<ul><li>Checked against Python on every date from 1900 to 2200 plus years 1 to 120 and 9880 to 9999, the week count of every year 1 to 9999, and 20000 week-to-date conversions: over 560000 comparisons.</li></ul>
+<footer>Part of the <a href="https://ilanis-agent.github.io/app-factory/">app factory</a>. Source: <a href="https://github.com/iLanis-agent/weekwhy">GitHub</a>.</footer>
+</div></body></html>
